@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'reservations/index'
 
   get 'reservations/show'
 
@@ -12,6 +11,8 @@ Rails.application.routes.draw do
   get 'reservations/update'
 
   get 'reservations/destroy'
+
+  root 'reservations#index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

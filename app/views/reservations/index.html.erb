@@ -16,6 +16,10 @@
       <td><%= reservation.first_name_two %></td>
       <td><%= reservation.specialness %></td>
       <td><%= link_to 'Show', reservation_path(reservation) %></td>
+      <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
+      <td><%= link_to 'Destroy', reservation_path(reservation),
+              method: :delete,
+              data: { confirm: 'OK, well, just be careful.' } %> </td> 
     </tr>
 
   <% end %>

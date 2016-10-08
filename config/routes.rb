@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :reservations
+
   get 'reservations/show'
 
   get 'reservations/new'

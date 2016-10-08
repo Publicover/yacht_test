@@ -1,3 +1,5 @@
+<center>
+
 <h1>PRESENTING!</h1>
 
 <p>
@@ -9,3 +11,13 @@
   <strong>name_two</strong><br>
   <%= @reservation.first_name_two %>
 </p>
+
+<p>
+  <strong>specialness</strong><br>
+  <%= @reservation.specialness %>
+</p>
+
+<%= link_to 'GOT A NEW RESERVATION?', new_reservation_path %><br>
+<%= link_to 'SEE THEM ALL', reservations_path %><br>
+
+</center>

@@ -25,6 +25,11 @@
   </p>
 
   <p>
+    <strong><%= f.label "specialness" %><br></strong>
+    <%= f.select :specialness, [["true", true], ["false", false]]%>
+  </p>
+
+  <p>
     <%= f.submit %>
   </p>
 

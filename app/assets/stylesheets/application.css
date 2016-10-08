@@ -14,11 +14,6 @@
  *= require_self
  */
 
-body {
-  padding-top: 2%;
-  text-align: center;
-}
-
  .error_explanation {
    color: red;
    text-align: center;

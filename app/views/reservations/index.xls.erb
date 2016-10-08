@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:x="urn:schemas-microsoft-com:office:excel"
+  xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:html="http://www.w3.org/TR/REC-html40">
+  <Worksheet ss:Name="Sheet1">
+    <Table>
+      <Row>
+        <Cell><Data ss:Type="String">First Name One</Data></Cell>
+        <Cell><Data ss:Type="String">First Name Two</Data></Cell>
+        <Cell><Data ss:Type="String">Specialness</Data></Cell>
+      </Row>
+    <% @reservations.each do |reservation| %>
+      <Row>
+        <Cell><Data ss:Type="Number"><%= product.first_name_one %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= product.first_name_two %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= product.specialness %></Data></Cell>
+      </Row>
+    <% end %>
+    </Table>
+  </Worksheet>
+</Workbook>
